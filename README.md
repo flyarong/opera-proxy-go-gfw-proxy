@@ -3,6 +3,8 @@ opera-proxy
 
 [![opera-proxy](https://snapcraft.io//opera-proxy/badge.svg)](https://snapcraft.io/opera-proxy)
 
+<img align="left" width="100" height="100" src="https://github.com/user-attachments/assets/aac4d29a-32b3-4e00-957c-3c7168228edc">
+
 Standalone Opera VPN client. Younger brother of [hola-proxy](https://github.com/Snawoot/hola-proxy/).
 
 Just run it and it'll start a plain HTTP proxy server forwarding traffic through "Opera VPN" proxies of your choice.
@@ -91,7 +93,7 @@ eu3.sec-tunnel.com,77.111.244.22,443
 | api-login | String | SurfEasy API login (default "se0316") |
 | api-password | String | SurfEasy API password (default "SILrMEPBmJuhomxWkfm3JalqHX2Eheg1YhlEZiMh8II") |
 | bind-address | String | HTTP proxy listen address (default "127.0.0.1:18080") |
-| bootstrap-dns | String | DNS/DoH/DoT/DoQ resolver for initial discovering of SurfEasy API address. See https://github.com/ameshkov/dnslookup/ for upstream DNS URL format. Examples: `https://1.1.1.1/dns-query`, `quic://dns.adguard.com` |
+| bootstrap-dns | String | Comma-separated list of DNS/DoH/DoT/DoQ resolvers for initial discovery of SurfEasy API address. See https://github.com/ameshkov/dnslookup/ for upstream DNS URL format. Examples: `https://1.1.1.1/dns-query`, `quic://dns.adguard.com`  (default `https://1.1.1.3/dns-query,https://8.8.8.8/dns-query,https://dns.google/dns-query,https://security.cloudflare-dns.com/dns-query,https://wikimedia-dns.org/dns-query,https://dns.adguard-dns.com/dns-query,https://dns.quad9.net/dns-query,https://doh.cleanbrowsing.org/doh/adult-filter/`) |
 | cafile | String | use custom CA certificate bundle file |
 | certchain-workaround | Boolean | add bundled cross-signed intermediate cert to certchain to make it check out on old systems (default true) |
 | country | String | desired proxy location (default "EU") |
